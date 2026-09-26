@@ -1,2 +1,6 @@
 informativo/
 logo.jpeg
+.vercel
+.env*
+video/hero-source.mp4
+.playwright-mcp/

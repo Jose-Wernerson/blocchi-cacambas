@@ -89,37 +89,27 @@
 
   <!-- HERO -->
   <section class="hero" id="topo" aria-labelledby="hero-title">
-    <div class="hero-decor" aria-hidden="true">
-      <svg viewBox="0 0 200 160" class="hero-cacamba">
-        <polygon points="20,40 100,10 180,40 160,90 40,90" fill="url(#g1)"/>
-        <polygon points="40,90 160,90 140,140 60,140" fill="url(#g2)"/>
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#FFC64B"/>
-            <stop offset="100%" stop-color="#FF8A00"/>
-          </linearGradient>
-          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#FF8A00"/>
-            <stop offset="100%" stop-color="#E4590A"/>
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="container hero-inner">
-      <p class="eyebrow">Entulho e resíduos de obra</p>
-      <h1 id="hero-title">Locação de caçambas rápida, segura e sem dor de cabeça</h1>
-      <p class="hero-lead">Blocchi Caçambas atende a Zona Norte de São Paulo com entrega ágil, prazo de locação de 3 dias úteis e descarte responsável do seu entulho.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
-          <img src="img/icons/whatsapp-white.svg" alt="" class="icon" width="20" height="20"> Solicitar orçamento no WhatsApp
-        </a>
-        <a class="btn btn-outline btn-large" href="#servicos">Ver serviços</a>
+    <div class="hero-card">
+      <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline poster="img/hero-poster.jpg" aria-hidden="true">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">Entulho e resíduos de obra</p>
+        <h1 id="hero-title">Locação de caçambas rápida, segura e sem dor de cabeça</h1>
+        <p class="hero-lead">Blocchi Caçambas atende a Zona Norte de São Paulo com entrega ágil, prazo de locação de 3 dias úteis e descarte responsável do seu entulho.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
+            <img src="img/icons/whatsapp-white.svg" alt="" class="icon" width="20" height="20"> Solicitar orçamento no WhatsApp
+          </a>
+          <a class="btn btn-outline btn-large" href="#servicos">Ver serviços</a>
+        </div>
+        <ul class="hero-badges" aria-label="Diferenciais">
+          <li>🚛 Entrega rápida</li>
+          <li>📅 3 dias úteis de locação</li>
+          <li>♻️ Descarte responsável</li>
+        </ul>
       </div>
-      <ul class="hero-badges" aria-label="Diferenciais">
-        <li>🚛 Entrega rápida</li>
-        <li>📅 3 dias úteis de locação</li>
-        <li>♻️ Descarte responsável</li>
-      </ul>
     </div>
   </section>
 
