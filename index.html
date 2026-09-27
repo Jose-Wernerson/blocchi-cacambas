@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-poster.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -40,6 +42,9 @@
   "@type": "LocalBusiness",
   "name": "Blocchi Caçambas",
   "image": "img/logo.jpeg",
+  "legalName": "Cynthia Talita dos Santos Parucci",
+  "taxID": "34.614.493/0001-71",
+  "email": "blocchicacambas@gmail.com",
   "telephone": "+5511945870843",
   "priceRange": "$$",
   "description": "Locação de caçambas estacionárias para entulho e resíduos de obra na Zona Norte de São Paulo.",
@@ -61,7 +66,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#topo" class="logo-link" aria-label="Blocchi Caçambas - página inicial">
-      <img src="img/logo.jpeg" alt="Blocchi Caçambas" class="logo-img" width="140" height="72">
+      <img src="img/logo-sm.webp" alt="Blocchi Caçambas" class="logo-img" width="108" height="56">
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu de navegação">
@@ -90,9 +95,8 @@
   <!-- HERO -->
   <section class="hero" id="topo" aria-labelledby="hero-title">
     <div class="hero-card">
-      <video class="hero-bg-video" id="heroVideo" autoplay muted loop playsinline poster="img/hero-poster.jpg" aria-hidden="true">
-        <source src="video/hero.mp4" type="video/mp4">
-      </video>
+      <video class="hero-bg-video" id="heroVideo" muted loop playsinline preload="none" poster="img/hero-poster.webp" aria-hidden="true"
+        data-src-desktop="video/hero.mp4" data-src-mobile="video/hero-mobile.mp4"></video>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner">
         <p class="eyebrow">Entulho e resíduos de obra</p>
@@ -123,11 +127,11 @@
         <p>Movemos seu projeto com força e precisão: da entrega até a retirada, cuidamos de cada etapa para que sua obra ou reforma não pare.</p>
         <div class="trust-badge">
           <strong>Cadastro SP Regula nº 54086</strong>
-          <span>Empresa cadastrada para prestação do serviço de locação de caçambas em São Paulo.</span>
+          <span>Empresa cadastrada na prefeitura de São Paulo para locação de caçambas. Emitimos CTR (Controle de Transporte de Resíduos) em todos os serviços.</span>
         </div>
       </div>
       <div class="about-image">
-        <img src="img/cacamba-branca-blocchi.jpg" alt="Caçamba estacionária branca da Blocchi Caçambas pronta para entrega em obra" width="1024" height="1365" loading="lazy">
+        <img src="img/cacamba-branca-blocchi.webp" alt="Caçamba estacionária branca da Blocchi Caçambas pronta para entrega em obra" width="728" height="970" loading="lazy">
       </div>
     </div>
   </section>
@@ -137,7 +141,7 @@
     <div class="container">
       <p class="eyebrow center">O que fazemos</p>
       <h2 id="servicos-title" class="center">Nossos serviços</h2>
-      <p class="section-lead center">Locação de caçambas para os principais tipos de resíduo de obra e reforma.</p>
+      <p class="section-lead center">Locação de caçambas de 4 m³ para os principais tipos de resíduo de obra e reforma.</p>
 
       <div class="cards-grid">
         <article class="card">
@@ -233,16 +237,16 @@
 
       <div class="gallery-grid">
         <a href="https://www.instagram.com/blochhicacambas/" target="_blank" rel="noopener" class="gallery-item" aria-label="Ver post no Instagram: caçamba estacionária branca da Blocchi Caçambas">
-          <img src="img/cacamba-branca-blocchi.jpg" alt="Caçamba estacionária branca da Blocchi Caçambas em obra" width="1024" height="1365" loading="lazy">
+          <img src="img/cacamba-branca-blocchi.webp" alt="Caçamba estacionária branca da Blocchi Caçambas em obra" width="728" height="970" loading="lazy">
         </a>
         <a href="https://www.instagram.com/blochhicacambas/" target="_blank" rel="noopener" class="gallery-item" aria-label="Ver post no Instagram: caminhão da Blocchi Caçambas em obra">
-          <img src="img/cacamba-caminhao-obra-blocchi.jpg" alt="Caminhão da Blocchi Caçambas entregando caçamba em canteiro de obras" width="1024" height="1365" loading="lazy">
+          <img src="img/cacamba-caminhao-obra-blocchi.webp" alt="Caminhão da Blocchi Caçambas entregando caçamba em canteiro de obras" width="600" height="800" loading="lazy">
         </a>
         <a href="https://www.instagram.com/blochhicacambas/" target="_blank" rel="noopener" class="gallery-item" aria-label="Ver post no Instagram: caçamba cheia de entulho">
-          <img src="img/cacamba-cheia-entulho.jpg" alt="Caçamba da Blocchi Caçambas cheia de entulho nivelado dentro da borda" width="1092" height="1456" loading="lazy">
+          <img src="img/cacamba-cheia-entulho.webp" alt="Caçamba da Blocchi Caçambas cheia de entulho nivelado dentro da borda" width="600" height="800" loading="lazy">
         </a>
         <a href="https://www.instagram.com/blochhicacambas/" target="_blank" rel="noopener" class="gallery-item" aria-label="Ver post no Instagram: obra em construção atendida pela Blocchi Caçambas">
-          <img src="img/obra-construcao-cacamba.jpg" alt="Obra em construção com caçamba da Blocchi Caçambas em São Paulo" width="977" height="1302" loading="lazy">
+          <img src="img/obra-construcao-cacamba.webp" alt="Obra em construção com caçamba da Blocchi Caçambas em São Paulo" width="600" height="800" loading="lazy">
         </a>
       </div>
     </div>
@@ -283,6 +287,10 @@
             <a href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">WhatsApp: (11) 94587-0843</a>
           </li>
           <li>
+            <span aria-hidden="true">✉️</span>
+            <a href="mailto:blocchicacambas@gmail.com">blocchicacambas@gmail.com</a>
+          </li>
+          <li>
             <span aria-hidden="true">📍</span>
             <span>São Paulo - Zona Norte</span>
           </li>
@@ -316,9 +324,10 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <img src="img/logo.jpeg" alt="Blocchi Caçambas" class="footer-logo" width="100" height="52" loading="lazy">
+    <img src="img/logo-sm.webp" alt="Blocchi Caçambas" class="footer-logo" width="100" height="52" loading="lazy">
     <p>&copy; <span id="year"></span> Blocchi Caçambas. Todos os direitos reservados.</p>
     <p class="footer-sub">Locação de caçambas | São Paulo - Zona Norte | Cadastro SP Regula nº 54086</p>
+    <p class="footer-sub">Cynthia Talita dos Santos Parucci | CNPJ 34.614.493/0001-71</p>
     <p class="footer-credit">Feito por <a href="https://www.squad4tech.com.br/" target="_blank" rel="noopener">Squad4Tech</a></p>
   </div>
 </footer>

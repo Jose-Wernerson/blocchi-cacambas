@@ -22,8 +22,13 @@
   }
 
   var heroVideo = document.getElementById('heroVideo');
-  if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    heroVideo.pause();
-    heroVideo.removeAttribute('autoplay');
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (heroVideo && !reducedMotion) {
+    window.addEventListener('load', function () {
+      var isMobile = window.matchMedia('(max-width: 700px)').matches;
+      heroVideo.src = isMobile ? heroVideo.dataset.srcMobile : heroVideo.dataset.srcDesktop;
+      var playing = heroVideo.play();
+      if (playing && playing.catch) { playing.catch(function () {}); }
+    });
   }
 })();
