@@ -355,9 +355,6 @@ button:focus-visible {
   max-width: 620px;
 }
 .services-title .marker {
-  background: rgba(255, 179, 0, 0.35);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
   padding: 0 0.15em;
 }
 .services-head-side { max-width: 300px; flex-shrink: 0; }
