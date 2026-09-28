@@ -20,14 +20,4 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
-
-  var heroVideo = document.getElementById('heroVideo');
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (heroVideo && !reducedMotion) {
-    window.addEventListener('load', function () {
-      heroVideo.src = heroVideo.dataset.src;
-      var playing = heroVideo.play();
-      if (playing && playing.catch) { playing.catch(function () {}); }
-    });
-  }
 })();

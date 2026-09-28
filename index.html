@@ -30,9 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="img/hero-poster.webp" type="image/webp" fetchpriority="high">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
+<link rel="preload" as="image" href="img/hero-bg.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"></noscript>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -85,7 +85,7 @@
         <li><a href="#mapa">Área de atendimento</a></li>
         <li><a href="#contato">Contato</a></li>
         <li><a class="btn btn-primary btn-small" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
-          <img src="img/icons/whatsapp-white.svg" alt="" class="icon" width="20" height="20"> WhatsApp
+          <img src="img/icons/whatsapp.svg" alt="" class="icon" width="20" height="20"> WhatsApp
         </a></li>
       </ul>
     </nav>
@@ -96,21 +96,24 @@
 
   <!-- HERO -->
   <section class="hero" id="topo" aria-labelledby="hero-title">
-    <div class="hero-card">
-      <video class="hero-bg-video" id="heroVideo" muted loop playsinline preload="none" poster="img/hero-poster.webp" aria-hidden="true" data-src="video/hero.mp4"></video>
-      <div class="hero-scrim" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <p class="eyebrow">Entulho e resíduos de obra</p>
-        <h1 id="hero-title">Locação de caçambas rápida, segura e sem dor de cabeça</h1>
-        <p class="hero-lead">Blocchi Caçambas atende a Zona Norte de São Paulo com entrega ágil, prazo de locação de 3 dias úteis e descarte responsável do seu entulho.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
-            <img src="img/icons/whatsapp-white.svg" alt="" class="icon" width="20" height="20"> Solicitar orçamento no WhatsApp
-          </a>
-          <a class="btn btn-outline btn-large" href="#servicos">Ver serviços</a>
-        </div>
+    <picture>
+      <source media="(max-width: 700px)" srcset="img/hero-bg-sm.webp">
+      <img class="hero-bg-photo" src="img/hero-bg.webp" alt="" aria-hidden="true" width="1800" height="782" fetchpriority="high">
+    </picture>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow hero-eyebrow"><span class="stripe-icon" aria-hidden="true"></span> São Paulo · Zona Norte</p>
+      <h1 id="hero-title">Caçamba de entulho<br><span class="accent">em São Paulo</span></h1>
+      <p class="hero-lead">Locação de caçambas para obra e reforma com entrega ágil, prazo de 3 dias úteis e descarte responsável.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
+          <img src="img/icons/whatsapp.svg" alt="" class="icon" width="20" height="20"> Pedir caçamba agora
+        </a>
+        <a class="btn btn-outline btn-large" href="#servicos">Ver serviços</a>
       </div>
+      <p class="hero-tag"><span class="stripe-icon" aria-hidden="true"></span> <strong>Atendimento rápido</strong> — orçamento na hora pelo WhatsApp</p>
     </div>
+    <div class="hero-stripe" aria-hidden="true"></div>
   </section>
 
   <!-- SOBRE -->
@@ -133,33 +136,73 @@
   </section>
 
   <!-- SERVIÇOS -->
-  <section class="section section-alt" id="servicos" aria-labelledby="servicos-title">
+  <section class="section section-alt services-section" id="servicos" aria-labelledby="servicos-title">
     <div class="container">
-      <p class="eyebrow center">O que fazemos</p>
-      <h2 id="servicos-title" class="center">Nossos serviços</h2>
-      <p class="section-lead center">Locação de caçambas de 4 m³ para os principais tipos de resíduo de obra e reforma.</p>
+      <p class="eyebrow hero-eyebrow"><span class="stripe-icon" aria-hidden="true"></span> 01 — Serviços</p>
 
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🧱</div>
-          <h3>Entulho de obra</h3>
-          <p>Retirada de entulho gerado em construções, demolições e reformas.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🪚</div>
-          <h3>Madeira</h3>
-          <p>Descarte de restos de madeira de forma prática e segura.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🧰</div>
-          <h3>Restos de obra</h3>
-          <p>Materiais de construção descartados durante a execução da obra.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon" aria-hidden="true">🏗️</div>
-          <h3>Tijolo e concreto</h3>
-          <p>Descarte de tijolos, blocos e concreto de demolições e reformas.</p>
-        </article>
+      <div class="services-head-row">
+        <h2 id="servicos-title" class="services-title">A caçamba certa começa<br>com um <span class="marker">pedido bem</span><br>informado.</h2>
+        <div class="services-head-side">
+          <p>Escolha o tipo de serviço que sua obra precisa. Disponibilidade e condições confirmadas pelo WhatsApp.</p>
+          <a class="link-arrow" href="#como-funciona">Entenda o processo <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="services-grid-v2">
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20alugar%20uma%20ca%C3%A7amba." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span><span class="stripe-icon" aria-hidden="true"></span> 01</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 2 2 4-4"></path><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 5.15"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg>
+          </div>
+          <h3>Aluguel de caçamba</h3>
+          <p>Para organizar resíduos de obras, reformas e serviços de construção, com entrega ágil.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20uma%20ca%C3%A7amba%20de%20entulho." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span>02</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"></path><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"></path><path d="M4 15v-3a6 6 0 0 1 6-6"></path><path d="M14 6a6 6 0 0 1 6 6v3"></path></svg>
+          </div>
+          <h3>Caçamba de entulho</h3>
+          <p>Para acondicionar resíduos de construção, como materiais de demolição, tijolo e concreto.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Preciso%20de%20ca%C3%A7amba%20para%20uma%20obra." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span>03</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3>Para obra</h3>
+          <p>Planejamento para reunir resíduos durante as etapas da obra, do início à finalização.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Preciso%20de%20ca%C3%A7amba%20para%20uma%20reforma." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span>04</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+          </div>
+          <h3>Para reforma</h3>
+          <p>Apoio para reformas residenciais ou comerciais com descarte de madeira e restos de obra.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Preciso%20de%20retirada%20de%20entulho." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span>05</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg>
+          </div>
+          <h3>Retirada de entulho</h3>
+          <p>Organizamos a retirada dos resíduos após a avaliação do material e das condições de acesso.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="service-card" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20saber%20sobre%20ca%C3%A7amba%20estacion%C3%A1ria." target="_blank" rel="noopener">
+          <div class="service-card__top">
+            <span>06</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+          </div>
+          <h3>Caçamba estacionária</h3>
+          <p>Avaliamos o melhor posicionamento da caçamba para a sua obra, reforma ou condomínio.</p>
+          <span class="service-card__more">Saiba mais <span aria-hidden="true">→</span></span>
+        </a>
       </div>
 
       <div class="rules-grid">
@@ -187,38 +230,58 @@
   </section>
 
   <!-- COMO FUNCIONA -->
-  <section class="section" id="como-funciona" aria-labelledby="como-funciona-title">
-    <div class="container">
-      <p class="eyebrow center">Passo a passo</p>
-      <h2 id="como-funciona-title" class="center">Como funciona a locação</h2>
+  <section class="section section-dark how-section" id="como-funciona" aria-labelledby="como-funciona-title">
+    <div class="container how-grid">
+      <div class="how-image">
+        <img src="img/cacamba-25-detalhe.webp" alt="Caçamba estacionária da Blocchi Caçambas pronta para receber entulho" width="640" height="853" loading="lazy">
+      </div>
+      <div class="how-content">
+        <p class="eyebrow hero-eyebrow"><span class="stripe-icon" aria-hidden="true"></span> Passo a passo</p>
+        <h2 id="como-funciona-title">Organize o pedido<br><span class="accent">antes da obra parar</span></h2>
+        <p class="section-lead">Do orçamento até a retirada, veja como funciona a locação da sua caçamba.</p>
 
-      <ol class="steps">
-        <li class="step">
-          <span class="step-number" aria-hidden="true">1</span>
-          <h3>Solicite o orçamento</h3>
-          <p>Fale com a gente pelo WhatsApp e receba seu orçamento rapidamente.</p>
-        </li>
-        <li class="step">
-          <span class="step-number" aria-hidden="true">2</span>
-          <h3>Agende com antecedência</h3>
-          <p>Planeje-se e garanta a disponibilidade da caçamba na data da sua obra.</p>
-        </li>
-        <li class="step">
-          <span class="step-number" aria-hidden="true">3</span>
-          <h3>Receba no prazo combinado</h3>
-          <p>Entregamos a caçamba no local combinado com agilidade.</p>
-        </li>
-        <li class="step">
-          <span class="step-number" aria-hidden="true">4</span>
-          <h3>Preencha sem ultrapassar a borda</h3>
-          <p>Mantenha o material nivelado para garantir segurança no transporte.</p>
-        </li>
-        <li class="step">
-          <span class="step-number" aria-hidden="true">5</span>
-          <h3>Retirada em até 3 dias úteis</h3>
-          <p>Esse é o prazo padrão de locação. Precisa de mais tempo? Fale conosco antes do vencimento e evite taxas extras.</p>
-        </li>
-      </ol>
+        <ol class="steps-list">
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <div>
+              <h3>Solicite o orçamento</h3>
+              <p>Fale com a gente pelo WhatsApp e receba seu orçamento rapidamente.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <div>
+              <h3>Agende com antecedência</h3>
+              <p>Planeje-se e garanta a disponibilidade da caçamba na data da sua obra.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <div>
+              <h3>Receba no prazo combinado</h3>
+              <p>Entregamos a caçamba no local combinado com agilidade.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">4</span>
+            <div>
+              <h3>Preencha sem ultrapassar a borda</h3>
+              <p>Mantenha o material nivelado para garantir segurança no transporte.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">5</span>
+            <div>
+              <h3>Retirada em até 3 dias úteis</h3>
+              <p>Prazo padrão de locação. Precisa de mais tempo? Fale conosco antes do vencimento e evite taxas extras.</p>
+            </div>
+          </li>
+        </ol>
+
+        <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
+          Consultar disponibilidade →
+        </a>
+      </div>
     </div>
   </section>
 
@@ -303,7 +366,7 @@
         </ul>
 
         <a class="btn btn-primary btn-large" href="https://wa.me/5511945870843?text=Ol%C3%A1!%20Quero%20solicitar%20um%20or%C3%A7amento%20de%20ca%C3%A7amba." target="_blank" rel="noopener">
-          <img src="img/icons/whatsapp-white.svg" alt="" class="icon" width="20" height="20"> Chamar no WhatsApp
+          <img src="img/icons/whatsapp.svg" alt="" class="icon" width="20" height="20"> Chamar no WhatsApp
         </a>
       </div>
     </div>
