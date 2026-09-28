@@ -762,8 +762,16 @@ button:focus-visible {
 .disposal-content .link-arrow { color: #fff; border-bottom-color: #fff; }
 
 @media (max-width: 860px) {
-  .disposal-grid { grid-template-columns: 1fr; }
-  .disposal-image img { max-width: 260px; }
+  .disposal-grid { grid-template-columns: 1fr; text-align: center; }
+  .disposal-image img {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: top;
+  }
+  .disposal-content { align-items: center; }
+  .disposal-content .rules-grid { text-align: left; }
 }
 
 /* ===== FAQ ===== */
