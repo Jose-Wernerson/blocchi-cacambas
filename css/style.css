@@ -352,14 +352,11 @@ button:focus-visible {
 }
 .services-title {
   font-family: 'Oswald', var(--font-heading);
-  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.005em;
   max-width: 620px;
-}
-.services-title .marker {
-  padding: 0 0.15em;
 }
 .services-head-side { max-width: 300px; flex-shrink: 0; }
 .services-head-side p { font-size: 0.95rem; }
