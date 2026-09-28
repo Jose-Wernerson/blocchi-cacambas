@@ -456,6 +456,9 @@ button:focus-visible {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
 }
 .how-content h2 {
   font-family: 'Oswald', var(--font-heading);
