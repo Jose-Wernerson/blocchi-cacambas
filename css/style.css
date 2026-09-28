@@ -429,8 +429,9 @@ button:focus-visible {
   padding: 1.75rem;
   background: #fff;
   border: 1px solid var(--color-border);
+  color: var(--color-text);
 }
-.rules-box h3 { font-size: 1.1rem; }
+.rules-box h3 { font-size: 1.1rem; color: var(--color-dark); }
 .rules-box ul { display: flex; flex-direction: column; gap: 0.5rem; }
 .rules-can { border-top: 4px solid #2E7D32; }
 .rules-cannot { border-top: 4px solid #C62828; }
