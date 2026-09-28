@@ -238,6 +238,9 @@ button:focus-visible {
   background: repeating-linear-gradient(45deg, var(--color-gold) 0 4px, transparent 4px 8px);
   flex-shrink: 0;
 }
+.service-card__top .stripe-icon {
+  background: repeating-linear-gradient(45deg, var(--color-gold) 0 4px, #171310 4px 8px);
+}
 .hero h1 {
   font-family: 'Oswald', var(--font-heading);
   font-size: clamp(2.1rem, 4.6vw, 3.4rem);
