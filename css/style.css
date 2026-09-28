@@ -744,8 +744,9 @@ button:focus-visible {
 }
 .disposal-image { min-height: 100%; }
 .disposal-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-.disposal-content { padding: 4rem clamp(24px, 5vw, 72px); display: flex; flex-direction: column; justify-content: center; background: var(--color-bg-alt); }
+.disposal-content { padding: 4rem clamp(24px, 5vw, 72px); display: flex; flex-direction: column; justify-content: center; }
 .disposal-content .rules-grid { margin: 2rem 0; }
+.disposal-content .link-arrow { color: #fff; border-bottom-color: #fff; }
 
 @media (max-width: 860px) {
   .disposal-grid { grid-template-columns: 1fr; }
