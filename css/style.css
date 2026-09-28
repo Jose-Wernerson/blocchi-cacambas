@@ -300,6 +300,8 @@ button:focus-visible {
   .hero { min-height: 680px; }
   .hero-inner { padding: 100px 0 48px; }
   .hero-lead { max-width: none; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
 }
 
 /* ===== Sections ===== */
