@@ -740,7 +740,7 @@ button:focus-visible {
   align-items: stretch;
 }
 .disposal-image { min-height: 100%; }
-.disposal-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
+.disposal-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 .disposal-content { padding: 4rem clamp(24px, 5vw, 72px); display: flex; flex-direction: column; justify-content: flex-start; }
 .disposal-content .rules-grid { margin: 2rem 0; }
 
